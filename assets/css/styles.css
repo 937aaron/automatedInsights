@@ -65,13 +65,14 @@ body {
       font-size: .6em;
       padding-bottom: 50px; }
     #container header .tiles {
-      width: 70%;
+      width: 75%;
       margin-left: auto;
       margin-right: auto; }
       #container header .tiles li {
         display: inline-block;
         width: 160px;
         text-align: left;
+        margin: 0px 5px 0px 5px;
         background-color: #406996;
         letter-spacing: 1.5px;
         padding-bottom: 30px;
@@ -90,5 +91,7 @@ body {
           color: white;
           font-size: .65em;
           margin-left: 10px; }
+        #container header .tiles li a:hover {
+          color: #a6cffc; }
 
 /*# sourceMappingURL=styles.css.map */
