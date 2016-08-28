@@ -97,7 +97,7 @@ body {
           #container header .tiles li .small {
             display: none; }
     #container .mainContent {
-      width: 58%;
+      width: 60%;
       margin-left: auto;
       margin-right: auto;
       letter-spacing: 1.5px; }
@@ -136,108 +136,84 @@ body {
           font-weight: 700; }
     #container .rightSide {
       display: inline-block;
-      width: 20%;
-      margin-left: 80px;
+      width: 60%;
+      float: right;
+      margin-left: 65px;
       vertical-align: top;
-      margin-top: 85px; }
+      margin-top: 85px;
+      opacity: .5; }
+      #container .rightSide .fa-play-circle-o {
+        position: absolute;
+        width: 20%;
+        margin-left: 13.5%;
+        margin-top: -5%;
+        font-size: 4.9em;
+        color: black; }
       #container .rightSide iframe {
         width: 420px;
-        height: 315px; } }
-@media (min-width: 660px) and (max-width: 921px) {
-  #container {
-    width: 100%; }
-    #container a {
-      text-decoration: none;
-      color: white;
-      font-size: .65em;
-      margin-left: 10px; }
-    #container a:hover {
-      color: #a6cffc; }
-    #container header {
-      background-image: url("../headerBackground.png");
-      width: 100%;
-      height: 35%;
-      color: white;
-      text-align: center;
-      letter-spacing: 1.5px; }
-      #container header .title {
-        font-size: 1.25em;
-        padding-top: 35px;
-        margin-bottom: 10px; }
-      #container header .titleDesc {
-        font-size: .6em;
-        padding-bottom: 50px; }
-      #container header .tiles {
+        height: 315px; }
+      #container .rightSide .formBox {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto; }
-        #container header .tiles li {
-          display: inline-block;
-          width: 160px;
-          text-align: left;
-          background-color: #406996;
-          letter-spacing: 1.5px;
-          padding-bottom: 30px;
-          line-height: 15px; }
-          #container header .tiles li img {
-            width: 100%; }
-          #container header .tiles li .tileTitle {
-            font-size: .85em;
-            margin: 10px 0px 10px 10px; }
-          #container header .tiles li .tileDesc {
-            font-size: .65em;
-            margin-bottom: 10px;
-            margin-left: 10px; }
-          #container header .tiles li .small {
-            display: none; }
-    #container .mainContent {
-      width: 58%;
-      margin-left: auto;
-      margin-right: auto;
-      letter-spacing: 1.5px; }
-    #container .leftSide {
-      display: inline-block;
-      width: 28%;
-      color: #545454;
-      line-height: 25px; }
-      #container .leftSide .leftHead {
-        font-size: 1.33em;
-        margin-top: 75px; }
-      #container .leftSide .borderBottom {
-        width: 25%;
-        border-bottom: 1px solid #bdbdbd;
-        padding-top: 25px; }
-      #container .leftSide .leftDetails {
-        margin-top: 25px;
-        font-size: .7em;
-        line-height: 15px;
-        color: #bdbdbd; }
-      #container .leftSide a {
-        color: white; }
-        #container .leftSide a .trialButton {
-          text-align: center;
-          width: 70%;
-          background-color: orange;
-          padding: 4px;
-          font-size: 1.15em;
-          font-weight: 700; }
-        #container .leftSide a .contactButton {
-          text-align: center;
-          width: 70%;
+        background-color: #f6f6f6; }
+        #container .rightSide .formBox .formHeader {
           background-color: #5DA0EB;
-          padding: 4px;
-          font-size: 1.15em;
-          font-weight: 700; }
-    #container .rightSide {
-      display: inline-block;
-      width: 20%;
-      margin-left: 50px;
-      vertical-align: top;
-      margin-top: 85px; }
-      #container .rightSide iframe {
-        width: 360px;
-        height: 315px; } }
-@media (max-width: 659px) {
+          color: white;
+          text-align: center;
+          font-size: 1em;
+          letter-spacing: 1.2px;
+          padding: 15px 0px 15px 0px;
+          margin-bottom: 40px; }
+          #container .rightSide .formBox .formHeader i {
+            font-size: 1.7em; }
+          #container .rightSide .formBox .formHeader p {
+            margin-top: 10px; }
+            #container .rightSide .formBox .formHeader p span {
+              font-size: 1.2em;
+              font-weight: 700; }
+        #container .rightSide .formBox .steps {
+          color: #545454;
+          font-weight: 700;
+          font-size: .72em;
+          margin-left: 20px;
+          padding-bottom: 15px; }
+        #container .rightSide .formBox .instructions {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: .6em; }
+          #container .rightSide .formBox .instructions li {
+            display: inline-block;
+            width: 42%;
+            margin-right: 22px;
+            padding-bottom: 5px; }
+        #container .rightSide .formBox form {
+          width: 95%;
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom: 1px solid #bdbdbd;
+          padding-bottom: 20px; }
+          #container .rightSide .formBox form input {
+            width: 42%;
+            margin-right: 10px; }
+          #container .rightSide .formBox form button {
+            margin-left: 48%;
+            outline: none;
+            border: none;
+            margin-top: 15px;
+            color: white;
+            padding: 8px 12px 8px 12px;
+            background-color: #9b2e9c; }
+            #container .rightSide .formBox form button span {
+              font-size: .4em;
+              vertical-align: middle;
+              margin-left: 3px; }
+        #container .rightSide .formBox .step2 {
+          margin: 15px 20px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #bdbdbd; }
+        #container .rightSide .formBox .step3 {
+          padding-bottom: 15px; } }
+@media (max-width: 921px) {
   #container {
     width: 100%; }
     #container a {
@@ -330,15 +306,84 @@ body {
           display: inline-block;
           width: 40%;
           background-color: #5DA0EB;
-          padding: 13.5px 4px 13.5px 4px;
+          padding: 4px 4px 4px 4px;
           font-size: 1.15em;
           font-weight: 700; }
     #container .rightSide {
-      width: 100%;
-      vertical-align: top;
-      margin-top: 20px; }
+      display: inline-block;
+      width: 90%;
+      margin-top: 85px;
+      opacity: .5; }
+      #container .rightSide .fa-play-circle-o {
+        position: absolute;
+        width: 20%;
+        margin-left: 30%;
+        margin-top: -5%;
+        font-size: 4.9em;
+        color: black; }
       #container .rightSide iframe {
-        width: 300px;
-        height: 215px; } }
+        width: 420px;
+        height: 315px; }
+      #container .rightSide .formBox {
+        width: 100%;
+        background-color: #f6f6f6; }
+        #container .rightSide .formBox .formHeader {
+          background-color: #5DA0EB;
+          color: white;
+          text-align: center;
+          font-size: 1em;
+          letter-spacing: 1.2px;
+          padding: 15px 0px 15px 0px;
+          margin-bottom: 40px; }
+          #container .rightSide .formBox .formHeader i {
+            font-size: 1.7em; }
+          #container .rightSide .formBox .formHeader p {
+            margin-top: 10px; }
+            #container .rightSide .formBox .formHeader p span {
+              font-size: 1.2em;
+              font-weight: 700; }
+        #container .rightSide .formBox .steps {
+          color: #545454;
+          font-weight: 700;
+          font-size: .72em;
+          margin-left: 20px;
+          padding-bottom: 15px; }
+        #container .rightSide .formBox .instructions {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: .6em; }
+          #container .rightSide .formBox .instructions li {
+            display: inline-block;
+            width: 42%;
+            margin-right: 22px;
+            padding-bottom: 5px; }
+        #container .rightSide .formBox form {
+          width: 95%;
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom: 1px solid #bdbdbd;
+          padding-bottom: 20px; }
+          #container .rightSide .formBox form input {
+            width: 42%;
+            margin-right: 10px; }
+          #container .rightSide .formBox form button {
+            margin-left: 48%;
+            outline: none;
+            border: none;
+            margin-top: 15px;
+            color: white;
+            padding: 8px 12px 8px 12px;
+            background-color: #9b2e9c; }
+            #container .rightSide .formBox form button span {
+              font-size: .4em;
+              vertical-align: middle;
+              margin-left: 3px; }
+        #container .rightSide .formBox .step2 {
+          margin: 15px 20px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #bdbdbd; }
+        #container .rightSide .formBox .step3 {
+          padding-bottom: 15px; } }
 
 /*# sourceMappingURL=styles.css.map */
