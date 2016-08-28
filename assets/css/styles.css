@@ -122,14 +122,14 @@ body {
         color: white; }
         #container .leftSide a .trialButton {
           text-align: center;
-          width: 70%;
+          width: 90%;
           background-color: orange;
           padding: 4px;
           font-size: 1.15em;
           font-weight: 700; }
         #container .leftSide a .contactButton {
           text-align: center;
-          width: 70%;
+          width: 90%;
           background-color: #5DA0EB;
           padding: 4px;
           font-size: 1.15em;
@@ -294,7 +294,8 @@ body {
           margin-top: 20px;
           text-align: center;
           display: inline-block;
-          width: 40%;
+          width: 47%;
+          margin-left: -15px;
           background-color: orange;
           padding: 4px;
           font-size: 1.15em;
@@ -302,9 +303,11 @@ body {
         #container .leftSide a .contactButton {
           text-align: center;
           margin-top: 20px;
+          margin-left: -12px;
+          margin-right: 0;
           vertical-align: top;
           display: inline-block;
-          width: 40%;
+          width: 47%;
           background-color: #5DA0EB;
           padding: 4px 4px 4px 4px;
           font-size: 1.15em;
@@ -366,7 +369,7 @@ body {
           padding-bottom: 20px; }
           #container .rightSide .formBox form input {
             width: 42%;
-            margin-right: 10px; }
+            margin-right: 5px; }
           #container .rightSide .formBox form button {
             margin-left: 48%;
             outline: none;
