@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Wordsmith</title>
   </head>
-  <body>
-    <div id="container">
+  <body ng-app='wordsmith'>
+    <div id="container" ng-controller='wordsmithCtlr'>
       <header>
         <p class='title'>The Power and Flexibility of Wordsmith</p>
         <p class='titleDesc'>Wordsmith smiths words like no other smithing product(there aren't any)</p>
         <ul class='tiles'>
-          <li><img src='assets/excell.png'/><p class='tileTitle'>Wordsmith for Spreadsheets</p><p class='tileDesc show'>Who doesn't love a good spreadsheet?</p><a class='big' href='automatedinsights.com'>Learn More ></a><a class='small' href='automatedinsights.com'>Learn More ></a></li>
-          <li><img src='assets/pingPong.png'/><p class='tileTitle'>Ping Pong</p><p class='tileDesc'>Wordsmith promises a 60% higher win rate 100% of the time!</p><a class='big'href='automatedinsights.com'>Request More Info ></a><a class='small' href='automatedinsights.com'>More Info ></a></li>
-          <li><img src='assets/wordsmith.png'/><p class='tileTitle'>Zapier</p><p class='tileDesc'>It's not a taser, we promise. It's just awesome.</p><a class='big' href='automatedinsights.com'>Learn More ></a><a class='small' href='www.automatedinsights.com'>Learn More ></a></li>
-          <li><img src='assets/mariokart.png'/><p class='tileTitle'>Video Games</p><p class='tileDesc'>Wordsmith plus Mariokart? Oh that is a whole new level!</p><a class='big' href='automatedinsights.com'>Request More Info ></a><a class='small' href='automatedinsights.com'>More Info ></a></li>
+          <li  ng-repeat='tile in tiles'><img src='{{tile.img}}'/><p class='tileTitle'>{{tile.title}}</p><p class='tileDesc show'>{{tile.description}}</p><a class='big' href='automatedinsights.com'>{{tile.linkStyle}}</a><a class='small' href='automatedinsights.com'>{{tile.linkStyle}}</a></li>
+          <!-- <li><img src='assets/pingPong.png'/><p class='tileTitle'>Ping Pong</p><p class='tileDesc'>Wordsmith promises a 60% higher win rate 100% of the time!</p><a class='big'href='automatedinsights.com'>Request More Info ></a><a class='small' href='automatedinsights.com'>More Info ></a></li> -->
+          <!-- <li><img src='assets/wordsmith.png'/><p class='tileTitle'>Zapier</p><p class='tileDesc'>It's not a taser, we promise. It's just awesome.</p><a class='big' href='automatedinsights.com'>Learn More ></a><a class='small' href='www.automatedinsights.com'>Learn More ></a></li> -->
+          <!-- <li><img src='assets/mariokart.png'/><p class='tileTitle'>Video Games</p><p class='tileDesc'>Wordsmith plus Mariokart? Oh that is a whole new level!</p><a class='big' href='automatedinsights.com'>Request More Info ></a><a class='small' href='automatedinsights.com'>More Info ></a></li> -->
         </ul>
       </header>
       <div class='mainContent'>
@@ -32,8 +32,7 @@
           </ul>
         </section>
         <section class='rightSide'>
-          <div class='formBox'>
-            <!-- <i class="fa fa-building-o" aria-hidden="true"></i> -->
+          <div class='formBox' ng-show='formBoxShow' ng-click='videoShowFunc()'>
             <h2 class='formHeader'><i class="fa fa-building-o" aria-hidden="true"></i><i class="fa fa-home" aria-hidden="true"></i><p><span>Wordsmith</span> for Real Estate</p></h2>
             <p class='steps'>Step 1: Enter Address</p>
             <ul class='instructions'>
@@ -50,10 +49,11 @@
 
 
           </div>
-          <!-- <iframe src="https://www.youtube.com/embed/VTkMCaKP96k?controls=1"></iframe> -->
+          <iframe ng-show='videoShow' src="https://www.youtube.com/embed/VTkMCaKP96k?controls=1"></iframe>
         </section>
       </div>
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

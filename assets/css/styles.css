@@ -212,7 +212,9 @@ body {
           padding-bottom: 15px;
           border-bottom: 1px solid #bdbdbd; }
         #container .rightSide .formBox .step3 {
-          padding-bottom: 15px; } }
+          padding-bottom: 15px; }
+      #container .rightSide .formBox:hover {
+        cursor: pointer; } }
 @media (max-width: 921px) {
   #container {
     width: 100%; }
@@ -246,7 +248,7 @@ body {
           height: 200px;
           text-align: left;
           vertical-align: top;
-          margin-right: -2px;
+          margin: 0px 2px 0px 2px;
           background-color: #406996;
           letter-spacing: 1px;
           padding-bottom: 30px;
@@ -325,8 +327,9 @@ body {
         font-size: 4.9em;
         color: black; }
       #container .rightSide iframe {
-        width: 420px;
-        height: 315px; }
+        width: 95%;
+        margin-left: 40px;
+        height: 295px; }
       #container .rightSide .formBox {
         width: 100%;
         background-color: #f6f6f6; }
@@ -387,6 +390,8 @@ body {
           padding-bottom: 15px;
           border-bottom: 1px solid #bdbdbd; }
         #container .rightSide .formBox .step3 {
-          padding-bottom: 15px; } }
+          padding-bottom: 15px; }
+      #container .rightSide .formBox:hover {
+        cursor: pointer; } }
 
 /*# sourceMappingURL=styles.css.map */
