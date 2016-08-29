@@ -18,7 +18,7 @@ var wordsmith = angular.module('wordsmith',[]);
          {title: 'Video Games',
           description: "Wordsmith plus Mariokart? Oh that is a whole new level!",
           linkStyle: 'Learn More >',
-          img: 'assets/marioKart.png'}
+          img: 'assets/mariokart.png'}
 
     ]
     $scope.videoShowFunc = function(){
